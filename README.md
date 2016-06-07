@@ -1,0 +1,2 @@
+# exercise
+gradle and docker
