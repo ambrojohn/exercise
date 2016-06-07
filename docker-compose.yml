@@ -1,0 +1,12 @@
+version: '2'
+services:
+  http_request:
+    build: .
+    volumes:
+    - ./build/classes/main:/exercise
+    depends_on:
+    - nginx
+  nginx:
+    image: nginx
+    ports:
+    - "32777:80"
